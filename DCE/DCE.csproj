@@ -8,6 +8,20 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Models\RequestDto\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\Impl\" />
+    <None Remove="System.Data.SqlClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\RequestDto\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Impl\" />
+  </ItemGroup>
 </Project>
